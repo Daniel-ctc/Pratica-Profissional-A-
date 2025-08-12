@@ -1,16 +1,16 @@
-#Prática Profissional A
-#Projeto: 
+# Prática Profissional A
+# Projeto: 
 
 Integrantes:
 
-Daniel da Silva Bisco — RA: 25560
+👤 - Daniel da Silva Bisco — RA: 25560
+👤 - Henrique Silva Pereira dos Santos — RA: 25326
+👤 - Moisés Filipe Telis de Lima — RA: 25344
 
-Henrique Silva Pereira dos Santos — RA: 25326
+# Ferramentas Utilizadas:
 
-Moisés Filipe Telis de Lima — RA: 25344
+* Trello — Organização e gerenciamento de tarefas
 
-Ferramentas Utilizadas:
+* Figma — Design e prototipagem
 
-Trello — Organização e gerenciamento de tarefas
-
-Figma — Design e prototipagem
+* Outras...
