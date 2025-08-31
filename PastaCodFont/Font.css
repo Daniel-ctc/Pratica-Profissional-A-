@@ -1,0 +1,89 @@
+header {
+    background-color: rgba(106, 117, 83, 1);
+    height: 6em;
+    width: 100%;
+    padding: 0%;
+    margin-top: 0%;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#cabecalho,
+#cabecalho-link {
+    margin-top: 0%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.5em;
+    align-items: center;
+}
+
+
+#cabecalho-link,
+a:hover {
+    color: rgba(238, 255, 0, 1);
+}
+
+#logo {
+    margin-top: 0%;
+    display: flex;
+    justify-content: flex-start;
+    height: 10em;
+    width: 10em;
+    border-radius: 1.5em;
+    padding-right: 50em;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    margin-right: 0.5em;
+}
+
+.troca-pg {
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+}
+
+#ft-user {
+    height: 2em;
+    width: 2em;
+    border-radius: 1.5em;
+}
+
+.rodape {
+    background-color: rgba(106, 117, 83, 1);
+    color: antiquewhite;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50%;
+
+}
+
+.rodape .redes-sociais {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app a {
+    color: blanchedalmond;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.app a:hover {
+    color: rgba(238, 255, 0, 1);
+}
