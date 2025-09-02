@@ -102,5 +102,26 @@ footer{
     margin: 20px auto;
     gap: 300px; 
 }
-
-
+.next{
+    color: aliceblue;
+    width: 600px;
+    background-color: rgb(99, 114, 64);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.next > button{
+    padding: 15px;
+    background-color:rgb(91, 107, 64) ;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
