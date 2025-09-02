@@ -3,7 +3,7 @@
 :root {
     --bg-color: #f5f0e3;
     --card-bg-color: #fcfbf6;
-    --primary-color: #92b083;
+    --primary-color: rgb(115, 144, 92);
     --secondary-color: #5d7053;
     --text-color: #555;
     --placeholder-color: #aaa;
@@ -175,6 +175,10 @@ h1 {
     overflow: hidden;
     text-align: left;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -186,6 +190,7 @@ h1 {
     height: 180px;
     object-fit: cover;
     border-bottom: 1px solid #eee;
+    transition: transform 0.3s;
 }
 
 .product-info {
@@ -295,3 +300,4 @@ footer {
         gap: 10px;
     }
 }
+
