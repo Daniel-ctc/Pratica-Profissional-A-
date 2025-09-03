@@ -1,0 +1,310 @@
+/* Base */
+:root {
+    --green-1: #73905c;
+    --green-2: #5b6b40;
+    --green-3: #637240;
+    --text: #ffffff;
+    --footer: #cfcccc;
+    --shadow: 0 6px 18px rgba(0, 0, 0, .15);
+    --footer-bg: #3b4530;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background-color: var(--green-1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin-inline: auto
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("https://images.pexels.com/photos/775031/pexels-photo-775031.jpeg") no-repeat center/cover;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .45));
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    z-index: 2;
+    transition: box-shadow .3s, backdrop-filter .3s, background-color .3s;
+}
+
+.menu.scrolled {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: var(--shadow);
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+#logo {
+    object-fit: contain
+}
+
+.menu nav a {
+    margin-left: 16px;
+    padding: 6px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: background .25s, border-color .25s, color .25s;
+}
+
+.menu nav a:hover {
+    background: rgba(255, 255, 255, .12)
+}
+
+#cad {
+    border-color: rgba(255, 255, 255, .5)
+}
+
+#cad:hover {
+    background: rgba(255, 255, 255, .08)
+}
+
+.lily-script-one-regular {
+    font-family: "Lily Script One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: clamp(28px, 5vw, 48px);
+    margin: 90px 16px 0;
+    z-index: 1;
+}
+
+/* Sobre */
+.section-title {
+    color: #fff;
+    text-align: center;
+    margin: 42px 0 28px;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .9fr;
+    gap: 48px;
+    align-items: center;
+    background: rgba(0, 0, 0, .08);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: var(--shadow);
+}
+
+.texto h3 {
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.texto p {
+    color: #eef2ec;
+    line-height: 1.6;
+    margin: 10px 0;
+    max-width: 70ch;
+    text-wrap: pretty;
+}
+
+figure {
+    margin: 0
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* --- Estilos extras para botão catálogo e rodapé --- */
+
+/* Botão catálogo centralizado */
+.cta-center {
+    margin-top: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-catalogo {
+    background-color: var(--green-2);
+    color: #fff;
+    padding: 16px 34px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background .3s, transform .2s;
+    box-shadow: var(--shadow);
+    display: inline-block;
+}
+
+.btn-catalogo:hover {
+    background-color: #4a5933;
+    transform: scale(1.05);
+}
+
+/* Rodapé novo */
+footer {
+    background-color: var(--footer-bg);
+    color: #f1f1f1;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    font-size: 0.95rem;
+}
+
+.footer-right a,
+.footer-left span {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #ddd;
+    font-size: 1.6rem;
+    transition: color .3s;
+}
+
+.social-icons a:hover {
+    color: #9fdc85;
+}
+
+/* Acessibilidade para descrições visuais escondidas */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* Animações de entrada */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .6s, transform .6s
+}
+
+.reveal.reveal-visible {
+    opacity: 1;
+    transform: none
+}
+
+/* Adiciona foco visível para navegação por teclado */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #9fdc85;
+    outline-offset: 2px;
+}
+
+/* Melhora contraste do texto no rodapé em telas pequenas */
+@media (max-width: 560px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-right a {
+        font-size: 1rem;
+        margin: 0 6px;
+    }
+}
+
+/* Torna o botão catálogo mais responsivo */
+@media (max-width: 560px) {
+    .btn-catalogo {
+        font-size: 1rem;
+        padding: 12px 18px;
+    }
+}
+
+/* Adiciona transição suave para links do menu */
+.menu nav a,
+.footer-right a,
+.social-icons a {
+    transition: background .25s, color .25s, text-decoration .25s;
+}
+
+/* Corrige espaçamento do título principal em telas pequenas */
+@media (max-width: 560px) {
+    .lily-script-one-regular {
+        margin: 60px 8px 0;
+        font-size: clamp(22px, 7vw, 32px);
+    }
+}
+
+/* Melhora acessibilidade do menu em telas pequenas */
+@media (max-width: 560px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+    }
+}
+
+/* Adiciona efeito de hover para cards de produtos (se usar) */
+.sobre-grid,
+.product-card {
+    transition: box-shadow .3s;
+}
+
+.sobre-grid:hover,
+.product-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
