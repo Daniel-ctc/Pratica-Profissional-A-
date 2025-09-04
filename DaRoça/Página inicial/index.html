@@ -1,88 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DaRoça | Produtos Frescos e Naturais do Campo à sua Mesa</title>
-    <meta name="description"
-        content="DaRoça é a sua assinatura de produtos naturais frescos, entregues diretamente do campo à sua mesa. Qualidade, frescor e conveniência em cada cesta.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DáRoça</title>
+    <link rel="stylesheet" href="pagina_carr.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-</head>
 
+</head>
 <body>
-    <header class="hero" role="banner">
+    <header>
         <div class="menu">
-            <a href="index.html" aria-label="Página inicial DaRoça" class="logo-link">
-                <img src="daRoca.png" alt="Logotipo DaRoça - uma folha estilizada" id="logo" width="90" height="90" loading="eager" />
-            </a>
-            <nav aria-label="Acesso rápido">
-                <a href="cadastro.html" aria-label="Página de cadastro">Cadastro</a>
-                <a href="login.html" id="cad" aria-label="Página de login">Entrar</a>
+                <a href="#"><img src="daRoca.png" alt="" id="logo"></a>
+            <nav>
+                <a href="#">Cadastro</a>
+                <a href="" id="cad">Entrar</a>
             </nav>
         </div>
-        <h1 class="lily-script-one-regular reveal">Bem-Vindo ao mundo DaRoça</h1>
+
+        <h1 class="lily-script-one-regular">Bem-Vindo ao nosso mundo DaRoça</h1>
     </header>
 
-    <main>
-        <section id="sobre" class="sobre container">
-            <div class="cta-center">
-                <a href="catalogo.html" class="btn-catalogo" aria-label="Ver o Catálogo de Produtos da DaRoça">Ver Catálogo de Produtos</a>
+    <div class="corpo">
+
+        <div class="next">
+            <h1>Conheça mais sobre o nosso catálogo</h1>
+            <p>Nós oferecemos uma vasta variedade de produtos naturais, indo desde frutas a verduras das mais frescas</p>
+            <button>Conhecer</button>
+        </div>
+
+        <h1 class="lily-script-one-regular" id="cor">Um pouco sobre nós</h1>
+        
+        <div class="alinhar">
+            <div class="texto"> 
+                <h2>O que é a DaRoça?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <h2 class="lily-script-one-regular section-title reveal">Um pouco sobre nós</h2>
-            <div class="sobre-grid">
-                <div class="texto reveal">
-                    <h3>O que é a DaRoça?</h3>
-                    <p>
-                        Fundada em 2019 por Nathália, a DaRoça nasceu da paixão pelo campo e pelo desejo de levar
-                        praticidade à vida moderna.
-                        Nossa missão é entregar produtos frescos diretamente na casa dos nossos clientes, garantindo
-                        qualidade, frescor e conveniência.
-                    </p>
-                    <p>
-                        Funcionamos no modelo de assinaturas: você escolhe seus produtos favoritos, define a frequência
-                        (semanal, quinzenal ou mensal)
-                        e o melhor dia para receber sua cesta. Separados na madrugada em centros de distribuição, nossos
-                        itens vão em
-                        caixas térmicas da Klabin e veículos climatizados – sempre fresquinhos.
-                    </p>
-                    <p>
-                        DaRoça é cuidado em cada detalhe e comodidade do campo à sua mesa.
-                    </p>
-                </div>
-                <figure class="reveal">
-                    <img src="pote2.webp" alt="Uma cesta de vime cheia de frutas frescas e sortidas, incluindo pêssegos, amoras, peras e uvas."
-                        width="500" height="300" loading="lazy">
-                    <figcaption class="visually-hidden">Produtos frescos selecionados</figcaption>
-                </figure>
+            <img src="pote2.webp" alt="">
+        </div>
+        
+        <div class="alinhar">
+            <div class="texto"> 
+                <h2>O que é a DaRoça?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-        </section>
-    </main>
+            <img src="pote2.webp" alt="">
+        </div>
+    </div>
 
     <footer>
-        <div class="footer-left">
-            <span>© 2025 DaRoça</span>
-            <div class="social-icons">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Siga a DaRoça no Instagram"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Curta a página da DaRoça no Facebook"><i
-                        class='bx bxl-facebook-square'></i></a>
-            </div>
-        </div>
-        <div class="footer-right">
-            <a href="#">Termos de Uso</a>
-            <a href="#">Licença</a>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Política de uso de cookies</a>
-        </div>
+        @2025 DaRoça
     </footer>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
