@@ -1,5 +1,5 @@
-
 header{
+    width: 100%;
     background-image: url("https://images.pexels.com/photos/775031/pexels-photo-775031.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,14 +7,15 @@ header{
     min-height: 450px;
 }
 .menu > nav{
-    padding: 15px 30px ;
+    width: 100%;
+    padding: 10px 30px;
 }
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px; 
+    padding: 0px; 
 }
 header > .lily-script-one-regular{
     margin-top: 200px;
@@ -67,27 +68,34 @@ nav > #cad{
 #cor{
     color: aliceblue;
 }
-footer{
-    padding: 20px;
-    background-color: white;
+.rodape {
+    background-color: rgba(106, 117, 83, 1);
+    color: antiquewhite;
+    padding: 20px 0;
     text-align: center;
     margin-top: auto;
-    color: black;
+
+}
+.social-icons{
+    color: white;
+}
+.social-icons:hover{
+    color: lightgray;
 }
 .texto h2{
     color: aliceblue;
-    text-align: right;
+    text-align: left;
 }
 .texto{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
+    align-items: flex-start;
+    width: 30%;
 
 }
 .texto p{
     max-width: 600px;
-    text-align: right;
+    text-align: justify;
     color: aliceblue;
 }
 .alinhar > img{
@@ -98,18 +106,18 @@ footer{
 .alinhar {
     display: flex;
     align-items: center; 
-    justify-content: center; 
+    justify-content: space-between; 
     width: 80%;
     margin: 20px auto;
-    gap: 300px; 
+    gap: 50px; 
 }
 .next{
     color: aliceblue;
-    width: 600px;
+    width: 80%;
     background-color: rgb(99, 114, 64);
     border-radius: 10px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     margin: 30px;
     display: flex;
     align-items: center;
@@ -119,10 +127,15 @@ footer{
     margin-bottom: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-.next > button{
+.next > a{
     padding: 15px;
-    background-color:rgb(91, 107, 64) ;
-    color: aliceblue;
+    background-color:rgb(91, 107, 64);
     border: none;
     border-radius: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+.next > a:hover{
+    background-color: rgb(88, 102, 63);
+    color: lightgray;
 }
