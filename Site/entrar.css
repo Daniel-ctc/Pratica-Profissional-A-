@@ -1,0 +1,64 @@
+       body {
+            background:  rgb(115, 144, 92);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #logo{
+          width: 8%;
+          height: 8%;
+        }
+
+        .form-container {
+            background: #fff;
+            max-width: 350px;
+            margin: 40px auto;
+            padding: 2rem 2rem 1.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #0001;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 1.1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            background: #4fc16e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.7rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #3da75a;
+        }
+        .lily-script-one-regular {
+            font-family: "Lily Script One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            color: rgb(115, 144, 92);
+        }
