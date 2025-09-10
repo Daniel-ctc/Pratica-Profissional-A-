@@ -38,13 +38,6 @@ Este projeto foi desenvolvido como parte da disciplina **Prática Profissional**
 
 ---
 
-## 📈 Melhorias e Otimizações
-- **SEO**: Meta tags, estrutura semântica (`<main>`, `<section>`), atributos `alt` nas imagens  
-- **Performance**: Imagens otimizadas (WebP) e lazy loading  
-- **Acessibilidade**: Navegação por teclado e atributos ARIA para experiência inclusiva  
-
----
-
 ## 👥 Equipe de Desenvolvimento
 - Daniel da Silva Bisco — RA: 25560  
 - Henrique Silva Pereira dos Santos — RA: 25326  
